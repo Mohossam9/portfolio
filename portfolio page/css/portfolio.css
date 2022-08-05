@@ -1,0 +1,170 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/skillscover.png);
+    background-size: cover;
+}
+.clearfix{clear: both;}
+.container { width: 1100px;
+    margin: auto; 
+    overflow: hidden;}
+p{color: white;}
+button {border-radius: 25px; 
+    border: 1px solid #31c379; 
+    background-color:white; 
+    color:#31C379; 
+    font-size:20px; 
+    font-weight: 800;
+cursor: pointer;  }
+
+/* header */
+.header .slider { height: 500px; background-image: url(../images/port-header.jpeg); background-size: cover;}
+.header .slider .intro {padding-top: 200px; text-align: center; }
+.header .slider h1 { color: white; border-top: 2px solid white; border-bottom: 2px solid white; font-size: 50px; width:600px; margin: auto; padding: 20px; text-transform: capitalize;}
+.header .slider button {width:150; margin: auto;  padding: 10px; margin-top: 50px; }
+
+
+/* navbar */
+.header .navbar {background-color: black;}
+
+.header .navbar h2 {color: white; text-transform: capitalize; float: left; font-size: 30px;}
+.header .navbar h2 span {color:#31C379;}
+.header .navbar ul {list-style: none; float: right; overflow: hidden; color: white; padding-left: 0;}
+.header .navbar ul li {padding: 10px; float: left;font-size: 25px; margin-right: 10px; cursor: pointer;}
+.header .navbar ul li a {color: white; text-decoration: none;}
+.active {background-color: #2A7353; border-radius: 20px;}
+/* features */
+.features {height: 170px; margin-top: 15px;}
+.features .f {
+    background-color: #191E22;
+    float: left;
+    width: 32%;
+    height: 170px;
+    margin-right: 1%;
+    border: 1px solid #191E22;
+    box-shadow: 3px 2px 4px #31C379;
+    border-radius: 10px;
+    text-transform: capitalize;
+
+}
+.features h1{color:#31C379;text-transform: capitalize; padding: 10px; text-align: center; margin-bottom: 0; text-shadow: 5px 5px 5px solid #31C379;}
+.features p {padding: 10px; text-align: center; font-size: 20px; margin-top: 0}
+
+/*about me */
+.aboutme {height: 700px; margin-top: 20px;}
+.aboutme .card {width: 600px; height: 700px; margin: 0px auto; position: relative; transition: all 2s ease-in-out; transform-style: preserve-3d; }
+.aboutme .card >div { border-radius: 20px;  position: absolute; left: 0; top: 0; height: 700px; width: 600px; backface-visibility: hidden; margin: 0px auto; border-radius: 20px; border: 2px solid #191E22;}
+.aboutme .card .myimg {z-index: 1; }
+.aboutme .card .myimg img {width: 100%; height: 637px; border-radius: 20px;}
+.aboutme .card .myimg h1 {text-transform: capitalize; color:#31C379; font-size: 40px; font-weight: 800; text-align: center; text-align: center; text-shadow: 2px 2px 10px #31C379; box-shadow: 2px 2px 10px black;  border-radius: 10px; margin-bottom: 10px; background-color: #191E22; margin-top: 0px;}
+
+.aboutme .card .mycv {background-color: #191E22; transform: rotateY(180deg); z-index: 0;}
+.aboutme .card .mycv > h3 {color: white; text-align: center; font-size: 30px; text-transform: capitalize; margin-top: 0px; padding: 50px; background-color:#31C379;  border-top-left-radius: 20px; border-top-right-radius: 20px; text-shadow: 2px 2px 10px white; } 
+.aboutme .card .mycv .hobbies >div {float: left; width: 48%; height: 100px; margin-top: 40px; padding: 20px; background-color:#191E22; }
+.aboutme .card .mycv .hobbies .hobimg {width: 30%; float: left;}
+.aboutme .card .mycv .hobbies .hobimg img {width: 90%; height: 100px; margin-top: 0px;}
+.aboutme .card .mycv .hobbies .text {width: 70%; float: left; height: 100px; text-align: center;}
+.aboutme .card .mycv .hobbies .text h3{text-transform: capitalize; color:#31C379; font-size: 20px; margin-top: 5px; }
+.aboutme .card .mycv .hobbies .text p {margin-top: 10px;}
+
+.aboutme .card:hover {transform: rotateY(180deg);}
+
+
+
+/* skills */ 
+.skills{margin-top: 10px; height: 650px; background-color: #191E22 ; border-radius: 20px;}
+.skills {box-shadow: 2px 2px 10px #31C379; border-radius: 20px; padding: 20px; }
+.skills .myskills , .skills .rates{float: left;
+width: 48%; margin-right: 20px; opacity: 0.3; transition: opacity 1s ease-in-out; cursor: pointer;}
+.skills .myskills h1{text-transform: capitalize; text-shadow: 2px 2px 10px black; font-weight: 800; margin-top: 0px; text-align: center; color: black; background-color:white; border-radius: 20px; padding: 5px;}
+.skills .myskills ul {list-style-position: inside; list-style-type: none;}
+.skills .myskills ul li {font-size: 20px; padding: 23px; text-transform: capitalize; font-size: 25px; font-weight:bold ; color:white; }
+.skills .rates {color:#31C379; margin-top: 0px;}
+.skills .rates h1 {text-transform: capitalize; text-shadow: 2px 2px 10px black; font-weight: 800; margin-top: 0px; text-align: center; color: black; background-color:white; border-radius: 20px; padding: 5px;}
+.skills .rates h2{text-transform: capitalize; margin-bottom: 0px; font-weight: bold; color: white;}
+.skills .rates meter {color:#31C379; width: 100%; height: 30px; }
+
+.skills p {font-size: 20px; text-transform: capitalize; padding-left: 15px; text-align: center; font-size: 25px;}
+.skills button {width:150px; margin: auto; padding: 10px; margin-top: 20px; border-radius: 25px; display: block; }
+.skills button a {color:#31C379; text-decoration: none; text-transform: capitalize;}
+
+.skills .myskills:hover,.skills .rates:hover {opacity: 1}
+/* resume */
+.resume{ text-align: center; margin-top: 20px; }
+.resume .container {background-color:#191E22; border-radius: 50%; width: 400px; height: 400px; text-align: center;}
+.resume h1{color:#31C379; text-shadow: 2px 2px 10px #31C379; font-weight: 800; text-transform: capitalize; font-size: 40px; margin-top: 70px; border: 2px solid white; border-radius: 20px; }
+.resume p {font-size:30px; margin-top: 80px; text-transform: capitalize;}
+.resume button{ width: 150px; padding: 10px;}
+.resume button a{color:#31C379; text-transform: capitalize; text-align: center; text-decoration: none;}
+
+/* education */
+
+.education {height: 860px; margin-top: 40px; background-color: #191E22; border-radius: 20px; }
+.education  {box-shadow: 2px 2px 10px #31C379; border: 20px; padding: 20px;  border-radius: 20px;}
+.education .myeducation, .education .exp , .education .mytraining , .education .trainingexp{float:left; width: 50%; height: 400px; padding: 20px;}
+.education .myeducation h1 {text-transform: capitalize; color:#31C379; font-weight: 800; text-align: center;
+text-shadow: 2px 2px 10px #31C379; font-size: 40px; }
+.education .myeducation p {font-size: 25px; text-align: center;}
+.education .myeducation{position: relative;}
+.education .myeducation span {text-align: center; display: block; font-size: 25px; font-weight: 800; margin-top: 100px; color:white; position: absolute; left: 30%; bottom:5%;}
+.education .exp img {height: 380px; width: 100%; border-radius: 20px;}
+
+.education .mytraining h1 {text-transform: capitalize; color:#31C379; font-weight: 800; text-align: center;
+text-shadow: 2px 2px 10px #31C379; font-size: 40px;}
+.education .mytraining p {font-size: 25px; text-align: center; }
+.education .mytraining {position: relative;}
+.education .mytraining span {text-align: center; display: block; font-size: 25px; font-weight: 800; margin-top: 100px; color:white; position: absolute; left: 30%; bottom: 10%;}
+
+.education .trainingexp p {text-align: center; margin-top: 120px; font-size: 25px; text-transform: capitalize; font-weight: 800;}
+.education .trainingexp button {padding: 10px; margin: 0px auto; display: block;}
+.education .trainingexp button a{color:#31C379; text-transform: capitalize; text-align: center; text-decoration: none;}
+
+/* port */
+
+.port { text-align: center; height: 380px; margin-top:20px; background-color: #191E22; border-radius: 20px;}
+.port  {box-shadow: 2px 2px 10px #31C379; border-radius: 20px; }
+.port h2 {text-transform: capitalize; color:#31C379; font-weight: 800; text-align: center;
+text-shadow: 2px 2px 10px #31C379; font-size: 40px; }
+.port p {font-size: 25px; text-align: center; text-transform: capitalize;}
+.port .container > div { float: left; width:33.3333%; height: 200px; }
+.port .container >div img {width: 95%; height: 200px; border: 2px solid ##31C379; box-shadow: 2px 2px 10px #31C379;}
+
+/*contact */
+.contact { color: white; margin-top: 20px; background-color: #191E22; border-radius: 20px; height: 450px;}
+.contact {box-shadow: 2px 2px 10px #31C379; border-radius: 20px;}
+.contact .text , .contact .f {float: left; width: 50%; margin-top: 20px;}
+.contact .text h1{text-transform: capitalize; color:#31C379; font-weight: 800; text-align: center;
+text-shadow: 2px 2px 10px #31C379; font-size: 40px;  }
+.contact .text p {text-align: center; margin-top: 120px; font-size: 25px; text-transform: capitalize; font-weight: 800;}
+.contact ,f label {text-transform: capitalize; font-size: 20px;}
+.contact .f input {width: 80%; margin-bottom:5px; margin-bottom: 20px; background-color: #4B5557; color:white; padding: 10px; font-size: 18px;}
+.contact .f textarea { height: 150px; width: 80%; background-color: #4B5557;}
+.contact .f button {padding: 10px;display: block; margin: 20px auto;}  
+
+.footer{background-color: black; overflow: hidden; text-transform: capitalize; text-align: center; font-size: 30px;  margin-top: 20px; }
+.footer span {color:#31C379;}
+
+/* contact */ 
+
+/* scroll btn */
+.scrollbtn 
+{
+    display: none;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50%;
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #31C379;
+    color:white;
+    text-align: center;
+    cursor: pointer;
+    
+}
+/* scroll btn */
+
